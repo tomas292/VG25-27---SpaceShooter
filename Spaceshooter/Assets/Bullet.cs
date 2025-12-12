@@ -19,14 +19,11 @@ public class Bullet : MonoBehaviour
 
         if(enemy != null)
         {
-            enemy.TakeDamage(1);
+            enemy.TakeDamage(damage);
         }
         
         
-         Destroy(gameObject);
-
-
-        
+         Destroy(gameObject); 
     }
         public void SetDamage(int newDamage)
         {
